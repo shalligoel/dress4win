@@ -31,7 +31,7 @@ INSERT INTO `categories` (`id`, `name`) VALUES
 --
 -- Table structure for table `pages`
 --
-
+use eCommerce;<br>
 CREATE TABLE `pages` (
   `id` int(11) NOT NULL,
   `slug` varchar(255) NOT NULL,
