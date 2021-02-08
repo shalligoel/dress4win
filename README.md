@@ -6,7 +6,8 @@ Credits & Source from: https://github.com/sendmail2krrish/eCommerce-site-using-N
 Launching Compute Engine Instance
 1.	Provision a Google Compute Engine (GCE)
 2.	SSH into the db-server. 
-3. Switch as root user using sudo -s
+3. Switch as root user using 
+    sudo -s
 4. install following software
     apt update
     apt install mysql-server -y
@@ -15,7 +16,8 @@ Launching Compute Engine Instance
     bash nodesource_setup.sh<br>
     apt install -y nodejs<br>
     npm install -g forever<br>
-5.	Logging to mysql using mysql -h 127.0.0.1 -u root -p (press enter for password).
+5.	Logging to mysql using command
+    mysql -h 127.0.0.1 -u root -p (press enter for password).
 6.	Create a database named eCommerce using command.
     CREATE DATABASE eCommerce;
     show databases; (make sure eCommerce database exist)
