@@ -68,7 +68,7 @@ Launching Compute Engine Instance
 
 14.  Now, run the Node JS app  using command
 
-     node index.js<br>
+     node index.js
      
 15. Use the external IP of app-server to access the Dress4Win App
 
@@ -81,28 +81,28 @@ Launching Compute Engine Instance
 
 1. Create a cloud SQL instance with mysql as option with version 5.7 and password as root123.
 
-2. Get the connection string of cloud sql instance.
+2. Get the public ip-address of cloud sql instance.
 
 3. connect to user from your vm by using the following command
 
-   mysql -h <cloudsql_connectionstring> -uroot -proot123
+   mysql -h <cloudsql_address> -uroot -proot123
    Follow the same commands as you did while setting mysql on the VM.
    
 4. exit from mysql server.
 
 5. login with dress4win as user.
    
-   mysql -h <cloudsql_connectionstring> -udress4win -proot123
+   mysql -h <cloudsql_address> -udress4win -proot123
    use eCommerce;
    show tables;
    
    If everything seems fine, exit from mysql server.
    
-6. Change the database IP address in database/config.js file.  - host - cloud-sql connection string, username - dress4win, password - root123
+6. Change the database IP address in database/config.js file.  - host - cloud-sql address, username - dress4win, password - root123
 
 7.  Now, run the Node JS app  using command
 
-     node index.js<br>
+     node index.js
      
 8. Use the external IP of app-server to access the Dress4Win App
 
