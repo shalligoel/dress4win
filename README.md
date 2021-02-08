@@ -116,4 +116,22 @@ Launching Compute Engine Instance
 
 13. Wait for the image to be built. It will take some time.
 
-                        
+ # Phase - 3
+ 
+ 1. Create a new VM with image that you have created in phase-2.
+ 
+ 2. Use startup-script with following commands
+ 
+    #! /bin/bash
+    
+    sudo -s 
+    cd /home/<yourid>/dress4win
+    node index.js
+    
+ 3. Create instance and wait for some time.
+ 
+ 4. Use the external IP of new vm to access the Dress4Win App
+
+ 5. Make sure application is running properly.
+ 
+ Yes, now you are ready for next phases. Keep working.
