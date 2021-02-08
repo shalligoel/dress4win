@@ -1,5 +1,6 @@
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+
 SET time_zone = "+00:00";
 
 --
@@ -12,7 +13,10 @@ SET time_zone = "+00:00";
 -- Table structure for table `categories`
 --
 
-CREATE TABLE `categories` (
+use eCommerce;
+
+
+CREATE TABLE if not exists `categories` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
@@ -31,8 +35,8 @@ INSERT INTO `categories` (`id`, `name`) VALUES
 --
 -- Table structure for table `pages`
 --
-use eCommerce;<br>
-CREATE TABLE `pages` (
+
+CREATE TABLE if not exists `pages` (
   `id` int(11) NOT NULL,
   `slug` varchar(255) NOT NULL,
   `title` varchar(1000) NOT NULL,
@@ -43,7 +47,7 @@ CREATE TABLE `pages` (
 -- Table structure for table `products`
 --
 
-CREATE TABLE `products` (
+CREATE TABLE if not exists `products` (
   `pid` int(11) NOT NULL,
   `category` int(11) NOT NULL,
   `title` varchar(1000) NOT NULL,
