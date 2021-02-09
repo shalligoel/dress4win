@@ -150,3 +150,70 @@ Launching Compute Engine Instance
  5. Make sure application is running properly.
  
  Yes, now you are ready for next phases. Keep working.
+ 
+ 
+ # Phase - 4
+
+1. Create three instance template with following settings:
+
+   name - dress4win-template-asia
+
+   image - dress4win-image
+
+   machine-type - f1-micro 
+
+   startup script - #! /bin/bash
+
+	sudo -s
+
+	cd /home/yourid/dress4win
+
+	node index.js
+
+	network - dress4win-vpc
+
+	Create one template  for one subnet.
+
+2. Now, you have three instance templates in three different regions.
+
+3. Create three instance groups based upon these templates.
+
+   name - dress4win-instancegroup-asia
+
+   location - multiple zones
+
+   region - based upon subnets
+
+   template - dress4win-template-asia
+
+   Number of instances - 1
+
+   Autoscaling mode - autoscale
+
+   autoscaling metric - loadbalancing 
+
+   min instance - 1
+
+   max instance - 2
+
+   health check
+
+   create a new health check as dress4win-health and set
+
+   Leave default settings for other parameters and click on create.
+  
+   Ignore warning and click on create.
+
+   use one template for one group.
+
+4. Now three instance groups are ready, one for each region.
+
+5. Goto Compute Engine console, you will see three VM running. Wait for some time to settle down.
+
+6. Click on external IP addresses on each VM. Check your application is running successfully.
+
+7. You are ready for next phase.
+
+
+
+
