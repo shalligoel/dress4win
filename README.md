@@ -15,11 +15,17 @@ Launching Compute Engine Instance
 4. install following software
 
     apt update
+    
     apt install mysql-server -y
+    
     apt install git
-    curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh <br>
+    
+    curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh 
+    
     bash nodesource_setup.sh<br>
+    
     apt install -y nodejs<br>
+    
     npm install -g forever<br>
     
 5.	Logging to mysql using command
@@ -41,7 +47,9 @@ Launching Compute Engine Instance
 7.	git clone https://github.com/shalligoel/Dress4Win.git.  (download application code)
 
 8.	Change directory to dress and then sql
+
      cd dress4win
+     
      cd sql
      
 9.	Create the table schema using mysql -h 127.0.0.1 -u root -p < ecommerce.sql
@@ -86,6 +94,7 @@ Launching Compute Engine Instance
 3. connect to user from your vm by using the following command
 
    mysql -h <cloudsql_address> -uroot -proot123
+   
    Follow the same commands as you did while setting mysql on the VM.
    
 4. exit from mysql server.
@@ -93,7 +102,9 @@ Launching Compute Engine Instance
 5. login with dress4win as user.
    
    mysql -h <cloudsql_address> -udress4win -proot123
+   
    use eCommerce;
+   
    show tables;
    
    If everything seems fine, exit from mysql server.
@@ -125,7 +136,9 @@ Launching Compute Engine Instance
     #! /bin/bash
     
     sudo -s 
-    cd /home/<yourid>/dress4win
+    
+    cd /home/yourid/dress4win
+    
     node index.js
     
  3. Create instance and wait for some time.
