@@ -52,7 +52,9 @@ Launching Compute Engine Instance
      
      cd sql
      
-9.	Create the table schema using  mysql -udress4win -proot123 < ecommerce.sql
+9.	Create the table schema using command
+
+    mysql -udress4win -proot123 < ecommerce.sql
 
 10. mysql -udress4win -proot123
 
