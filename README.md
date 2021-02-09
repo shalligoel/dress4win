@@ -22,15 +22,15 @@ Launching Compute Engine Instance
     
     curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh 
     
-    bash nodesource_setup.sh<br>
+    bash nodesource_setup.sh
     
-    apt install -y nodejs<br>
+    apt install -y nodejs
     
-    npm install -g forever<br>
+    npm install -g forever
     
 5.	Logging to mysql using command
 
-    mysql -h 127.0.0.1 -u root -p (press enter for password).
+    sudo mysql -h 127.0.0.1 -uroot -p (press enter for password).
     
 6.	Create a database named eCommerce using command.
     
@@ -52,7 +52,7 @@ Launching Compute Engine Instance
      
      cd sql
      
-9.	Create the table schema using mysql -h 127.0.0.1 -u root -p < ecommerce.sql
+9.	Create the table schema using  mysql -udress4win -proot123 < ecommerce.sql
 
 10. mysql -udress4win -proot123
 
