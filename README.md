@@ -150,6 +150,8 @@ Launching Compute Engine Instance
  5. Make sure application is running properly.
  
  Yes, now you are ready for next phases. Keep working.
+
+ 
  
  
  # Phase - 4
@@ -215,5 +217,14 @@ Launching Compute Engine Instance
 7. You are ready for next phase.
 
 
+# phase - 5
+ 
+ ## Set up a global Load Balancer
+ 
+ 
+ 
+ # Phase - 6
+ 
+ ## Create a domain name and set for your application.
 
 
