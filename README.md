@@ -4,6 +4,8 @@ Credits & Source from: https://github.com/sendmail2krrish/eCommerce-site-using-N
 
 ## Phase -1:
 
+### Create a custom VPC with three subnets, one in usa, asia and Europe. Create appropriate firewall rules.
+
 ### Launching one server for database and application
 Launching Compute Engine Instance
 1.	Provision a Google Compute Engine (GCE)
@@ -90,8 +92,10 @@ Launching Compute Engine Instance
 # Create a SQL instance and connect to your application
 
 1. Create a cloud SQL instance with mysql as option with version 5.7 and password as root123.
+	Create a private ip address for cloud-sql insance.
+	As Authorized Networks, use your custom VPC.
 
-2. Get the public ip-address of cloud sql instance.
+2. Get the private ip-address of cloud sql instance.
 
 3. connect to user from your vm by using the following command
 
@@ -111,7 +115,7 @@ Launching Compute Engine Instance
    
    If everything seems fine, exit from mysql server.
    
-6. Change the database IP address in database/config.js file.  - host - cloud-sql address, username - dress4win, password - root123
+6. Change the database IP address in database/config.js file.  - host - cloud-sql private ip address, username - dress4win, password - root123
 
 7.  Now, run the Node JS app  using command
 
@@ -121,7 +125,7 @@ Launching Compute Engine Instance
 
 9. Make sure application is running properly.
    
-10. Stop VM.
+10. Stop VM. (Do not delete it)
 
 11. Goto Disks page and select your disk.
 
@@ -141,7 +145,7 @@ Launching Compute Engine Instance
     
     cd /home/yourid/dress4win
     
-    node index.js
+    sudo node index.js
     
  3. Create instance and wait for some time.
  
