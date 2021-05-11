@@ -32,7 +32,7 @@ Launching Compute Engine Instance
     
 5.	Logging to mysql using command
 
-    sudo mysql -h 127.0.0.1 -uroot -p (press enter for password).
+    sudo mysql  -uroot -p (press enter for password).
     
 6.	Create a database named eCommerce using command.
     
