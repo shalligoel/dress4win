@@ -13,6 +13,9 @@ Launching Compute Engine Instance
 3. Switch as root user using 
 
     sudo -s
+    mkdir /Dress4win
+    chmod 777 /Dress4win
+    md /Dress4win
     
 4. install following software
 
@@ -32,9 +35,9 @@ Launching Compute Engine Instance
     
 5.	Logging to mysql using command
 
-    sudo mysql  -uroot -p (press enter for password).
+    sudo mysql -uroot -p (press enter for password).
     
-6.	Create a database named eCommerce using command.
+6.   Create a database named eCommerce using command.
     
     CREATE DATABASE eCommerce;
     
