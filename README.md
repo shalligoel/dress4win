@@ -13,9 +13,9 @@ Launching Compute Engine Instance
 3. Switch as root user using 
 
     sudo -s
-    mkdir /Dress4win
-    chmod 777 /Dress4win
-    md /Dress4win
+    mkdir /Dress4win<br>
+    chmod 777 /Dress4win<br>
+    md /Dress4win<br>
     
 4. install following software
 
