@@ -95,11 +95,12 @@ Launching Compute Engine Instance
 
 # Create a SQL instance and connect to your application
 
-1. Create a cloud SQL instance with mysql as option with version 5.7 and password as root123.
-	Create a private ip address for cloud-sql insance.
-	As Authorized Networks, use your custom VPC.
+1. 
+a.Create a cloud SQL instance with mysql as option with version 5.7 and password as root123.
+b. Create a public ip address for cloud-sql insance. As Authorized Networks, use 0.0.0.0/0.
+c. Create a user in Cloud-sql : username: dress4win and password: root123, host: from any host
 
-2. Get the private ip-address of cloud sql instance.
+2. Get the public ip-address of cloud sql instance.
 
 3. connect to user from your vm by using the following command
 
