@@ -4,8 +4,6 @@ Credits & Source from: https://github.com/sendmail2krrish/eCommerce-site-using-N
 
 ## Phase -1:
 
-### Create a custom VPC with three subnets, one in usa, asia and Europe. Create appropriate firewall rules.
-
 ### Launching one server for database and application
 Launching Compute Engine Instance
 1.	Provision a Google Compute Engine (GCE)
