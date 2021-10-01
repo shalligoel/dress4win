@@ -48,7 +48,7 @@ Launching Compute Engine Instance
     
     exit
     
-7.	git clone https://github.com/shalligoel/Dress4Win.git.  (download application code)
+7.	git clone https://github.com/shalligoel/Dress4Win.git  (download application code)
 
 8.	Change directory to dress and then sql
 
