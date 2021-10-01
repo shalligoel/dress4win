@@ -13,8 +13,7 @@ Launching Compute Engine Instance
     sudo -s
     mkdir /Dress4win<br>
     chmod 777 /Dress4win<br>
-    chmod 777 /Dress4win/*<br>
-    cd /Dress4win<br>
+   cd /Dress4win<br>
     
 4. install following software
 
