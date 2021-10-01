@@ -51,7 +51,7 @@ Launching Compute Engine Instance
 
 8.	Change directory to dress and then sql
 
-     cd dress4win
+     cd Dress4win
      
      cd sql
      
