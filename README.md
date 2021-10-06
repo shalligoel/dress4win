@@ -3,8 +3,8 @@ Credits & Source from: https://github.com/sendmail2krrish/eCommerce-site-using-N
 # Dress4Win
 
 ## Phase -1:
-
-### Launching one server for database and application
+### Create a custom VPC with three subnets - USA - us-central1, Europe - London and Asia - singapore . Create appropriate firewalls.
+### Launching one server for database and application in custom VPC
 Launching Compute Engine Instance
 1.	Provision a Google Compute Engine (GCE)
 2.	SSH into the server. 
