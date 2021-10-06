@@ -29,7 +29,6 @@ Launching Compute Engine Instance
     
     apt install -y nodejs
     
-    npm install -g forever
     
 5.	Logging to mysql using command
 
