@@ -68,9 +68,9 @@ Launching Compute Engine Instance
     
     exit
     
-11. cd .. (back to dress4win folder)
+11. cd .. (back to Dress4win folder)
 
-    pwd (make sure dress4win is current folder)
+    pwd (make sure Dress4win is current folder)
     
     npm install. (install packages)
     
