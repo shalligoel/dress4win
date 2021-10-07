@@ -10,7 +10,7 @@ Launching Compute Engine Instance
 2.	SSH into the server. 
 3. Switch as root user using 
 
-    sudo -s
+    sudo -s<br>
     mkdir /Dress4win<br>
     chmod 777 /Dress4win<br>
    cd /Dress4win<br>
