@@ -50,7 +50,7 @@ Launching Compute Engine Instance
 
 8.	Change directory to dress and then sql
 
-     cd Dress4win
+     cd Dress4Win
      
      cd sql
      
@@ -146,7 +146,7 @@ c. Create a user in Cloud-sql : username: dress4win and password: root123, host:
     
     sudo -s 
     
-    cd /Dress4win/Dress4win
+    cd /Dress4win/Dress4Win
     
     sudo node index.js
     
