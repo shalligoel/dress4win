@@ -146,7 +146,7 @@ c. Create a user in Cloud-sql : username: dress4win and password: root123, host:
     
     sudo -s 
     
-    cd /home/yourid/dress4win
+    cd /Dress4win/Dress4win
     
     sudo node index.js
     
