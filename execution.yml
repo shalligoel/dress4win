@@ -1,19 +1,11 @@
 ---
 execution:
-- concurrency: 15
-  hold-for: 3m
-  ramp-up: 2m
-  
-  scenerio: Choose Flight
-scenerios:
-  Choose Flight:
+  -
+    concurrency: 10 
+    hold-for: 5m
+    ramp-up: 1m
+    scenario: quick-test
+scenarios:
+  quick-test:
     requests:
-    -label: blazedemo
-     method: GET
-     url: http://blazedemo.com
-    -label: reverse
-     method: POST
-     url: http://blazedemo.com/reverse.php
-     body:
-       fromPort: Paris
-       toPort: Buenos Aires
+      - "http://blazedemo.com"
