@@ -1,6 +1,6 @@
 ---
 execution:
-- concurrency: 50
+- concurrency: 10
   hold-for: 3m
   ramp-up: 2m
   
